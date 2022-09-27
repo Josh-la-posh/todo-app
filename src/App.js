@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import List from './List';
 import Alert from './Alert';
+
 // reducer function
 const getLocalStorage = () => {
   let list = localStorage.getItem('list');
@@ -113,7 +114,7 @@ const Todo = () => {
           </button>
 
       </div>
-      )}      
+      )}
     </section>
   );
 }
