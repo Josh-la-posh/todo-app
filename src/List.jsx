@@ -1,5 +1,6 @@
 import React from "react";
-// import { FaEdit, FaTrash} from 'react-icons/fa';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPen, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const List = ({items, removeItem, editItem}) => {
     return (
@@ -16,14 +17,14 @@ const List = ({items, removeItem, editItem}) => {
                                     type="button"
                                     onClick={() => editItem(id)}
                                     >
-                                        {/* <FaEdit /> */}
+                                        <FontAwesomeIcon icon={faPen} style={{fontSize:'14px'}} />
                                 </button>
                                 <button
                                     type="button"
                                     className="delete-btn"
                                     onClick={() => removeItem(id)}
                                     >
-                                       {/* <FaTrash /> */}
+                                       <FontAwesomeIcon icon={faTrash} style={{fontSize:'14px', marginLeft:'10px'}} />
                                 </button>
                             </div>
                         </article>
